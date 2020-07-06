@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
 body{
     max-width: 95%;
+    height: 5000px;
     background-color: #f2f2f2;
     margin:0 auto;
     margin-bottom:0;
@@ -9,20 +10,20 @@ body{
   }
 
 p, h1, h2, h3, a, ul, button {margin:0; padding: 0; text-decoration:none; color: #222;}
-nav {display: flex; justify-content: space-between;padding-bottom: 10px; background: #fff; border-bottom: 1px solid #eee; text-transform: uppercase;padding:2% 10%;}
-.site-title {display: flex; font-family: 'Noto Sans JP', sans-serif; font-size:15px; letter-spacing: 0.2rem; text-decoration: none; width:20%; padding: 5px; text-align: center;}
-nav ul {list-style: none; align-items: flex-end;}
-nav li {position: relative; float: left; margin-top: 25px;}
-nav ul a {font-size: 15px; font-weight: 600; margin-right: 35px; text-decoration: none;  color: #222; letter-spacing: 0.1rem;}
-nav button {font-family: 'Roboto', sans-serif; background-color: #FFB056; color: #fff; border: none; border-radius: 5px; box-shadow: 0px 4px 4px rgba(0,0,0,0.25); padding: 15px 30px; text-transform: uppercase; font-size: 15px; height: fit-content;}
-nav li a:hover{color:#006A74; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+#navbar {display: flex; width: 80%;position:sticky; background:#fff;z-index: 99; border-bottom: 3px solid #eee;justify-content: space-between;text-transform: uppercase;padding:2% 10%;}
+.site-title {display: block; font-family: 'Noto Sans JP', sans-serif; font-size:15px; letter-spacing: 0.2rem; text-decoration: none; width:20%; padding: 5px; text-align: center;}
+#navbar ul {list-style: none; align-items: flex-end;}
+#navbar li {position: relative; float: left; margin-top: 25px;}
+#navbar ul a {font-size: 15px; font-weight: 600; margin-right: 35px; text-decoration: none;  color: #222; letter-spacing: 0.1rem;}
+#navbar button {font-family: 'Roboto', sans-serif; background-color: #FFB056; color: #fff; border: none; border-radius: 5px; box-shadow: 0px 4px 4px rgba(0,0,0,0.25); padding: 15px 30px; text-transform: uppercase; font-size: 15px; height: fit-content;}
+#navbar li a:hover{color:#006A74; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
-#sticky-menu {display: flex; justify-content: space-between;border-bottom: 1px solid #eee;padding:1% 15%;text-transform: uppercase;}
+#sticky-menu {display: flex; width:100%; justify-content: space-between;border-bottom: 1px solid #eee;padding:1% 15%;text-transform: uppercase;}
 #sticky-menu ul {list-style: none; align-items: flex-end;}
 #sticky-menu li {position: relative; float: left; margin-top: 25px;}
 #sticky-menu ul a {font-size: 15px; font-weight: 600; margin-right: 35px; text-decoration: none;  color: #222; letter-spacing: 0.1rem;}
 
-footer{padding-bottom:10px; background: #bfefff8c;;width: 100%; }
+footer{padding-bottom:10px; background: #bfefff8c;width: 100%; }
 .footer-custom {display: flex; justify-content: center;text-transform: uppercase; padding:10px;font-family: 'Noto Sans JP', sans-serif;}
 footer h3{display: inline-block; font-family: 'Piedra', cursive; font-size:25px; font-weight:600; letter-spacing: 0.2rem; text-decoration: none;}
 footer ul{list-style: none;}
@@ -42,9 +43,11 @@ footer ul{list-style: none;}
 .footer-links ul a {font-size: 10px; font-weight: 600; margin-right:20px; text-decoration: none; text-transform: uppercase; }
 
 nav + div {margin-top: 0; background-color: #fff;}
-.banner {border: 1px solid #eee; height: 400px;}
-.banner h1{text-transform: uppercase; font-family: 'Noto Sans JP', sans-serif;color:#00CFFF; text-align: center;margin-top: 5%;}
-.banner p{text-transform: capitalize;text-align: center; margin-top:5px;}
+.index-banner {position: relative; text-align: center;width: 100%;}
+.banner-title {position: absolute;width:80%;top:40%; left:10%}
+.index-banner img{opacity: 0.5; }
+.index-banner h1{text-transform: uppercase; font-family: 'Noto Sans JP', sans-serif;color:#00CFFF; text-align: center;}
+.index-banner p{text-transform: capitalize;text-align: center; margin-top:1%;}
 
 .news-banner {display: flex; justify-content: space-between; border: 1px solid #eee; height: 300px;background-color: #f2f2f2;}
 .news-abstract {width: 50%; height:100%; padding: 2%;}
