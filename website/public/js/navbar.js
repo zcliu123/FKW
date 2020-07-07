@@ -1,14 +1,15 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.transition = "all 0.5s";
-    
-    console.log("show navbar");
+  if (prevScrollpos > currentScrollPos & currentScrollPos > 150) {
+    document.getElementById("sticky-nav").style.position = "sticky";
+    document.getElementById("sticky-nav").style.top = "0px";
+    document.getElementById("sticky-nav").style.transition = "all 0.5s";
   } else {
-    document.getElementById("navbar").style.top = "-250px";
-    console.log("hide");
+    document.getElementById("sticky-nav").style.position = "absolute"; 
+    document.getElementById("sticky-nav").style.top = "-250px";
+    document.getElementById("sticky-nav").style.transition = "all 0.2s";
   }
+  
   prevScrollpos = currentScrollPos;
 }
