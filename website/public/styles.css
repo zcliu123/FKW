@@ -9,26 +9,16 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
   }
 
-p, h1, h2, h3, a, ul, button {margin:0; padding: 0; text-decoration:none; color: #222;}
-#navbar {display: flex; width: 80%; background:#fff; border-bottom: 3px solid #eee;justify-content: space-between;text-transform: uppercase;padding:2% 10%;z-index:100;}
-.site-title {display: block; font-family: 'Noto Sans JP', sans-serif; font-size:15px; letter-spacing: 0.2rem; text-decoration: none; width:20%; padding: 5px; text-align: center;}
-#navbar ul {list-style: none; align-items: flex-end;}
-#navbar li {position: relative; float: left; margin-top: 15px;}
-#navbar ul a {font-size: 15px; font-weight: 600; margin-right: 35px; text-decoration: none;  color: #222; letter-spacing: 0.1rem;}
-#navbar button {font-family: 'Roboto', sans-serif; background-color: #FFB056; color: #fff; border: none; border-radius: 5px; box-shadow: 0px 4px 4px rgba(0,0,0,0.25); padding: 15px 30px; text-transform: uppercase; font-size: 15px; height: fit-content;}
-#navbar li a:hover{color:#006A74; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
-#sticky-nav {display: flex; width:100%; z-index: 99;position:absolute; top:-100px;border-bottom: 1px solid #eee;background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);text-transform: uppercase;}
-#sticky-nav #icon {margin-left: 10%; margin-top: 1%; margin-bottom: 1%;}
-#sticky-nav ul {list-style: none; align-items: flex-end; margin-left: 30%;margin-top: 1%; margin-bottom: 1%;}
-#sticky-nav li {position: relative; float: left;}
-#sticky-nav ul a {font-size: 15px; font-weight: 600; margin-right: 35px; text-decoration: none;  color: #222; letter-spacing: 0.1rem;}
-#sticky-nav li a:hover{color:#006A74; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+#navbar {display: flex; width: 100%; background:#fff; border-bottom: 3px solid #eee;justify-content: space-between;text-transform: uppercase;z-index:100;}
+#navbar .table-buttons{display: flex;}
+#navbar .dropdown-content {display: none;}
 
-footer{padding-bottom:10px; background: #bfefff8c;width: 100%; }
+
+.footer{padding-bottom:10px; background: #bfefff8c;width: 100%; }
 .footer-custom {display: flex; justify-content: center;text-transform: uppercase; padding:10px;font-family: 'Noto Sans JP', sans-serif;}
-footer h3{display: inline-block; font-family: 'Piedra', cursive; font-size:25px; font-weight:600; letter-spacing: 0.2rem; text-decoration: none;}
-footer ul{list-style: none;}
+.footer h3{display: inline-block; font-family: 'Piedra', cursive; font-size:25px; font-weight:600; letter-spacing: 0.2rem; text-decoration: none;}
+.footer ul{list-style: none;}
 .footer-left{width: 53%;display: block;margin: 30px; margin-bottom: 0px;}
 .footer-left label{display: block;color:#0e87cc; font-size:20px; margin-bottom:10px;}
 .footer-left input{border: 2px solid #BEBEBE; background: transparent; box-sizing: border-box;margin:0; font-size:15px;padding:5px;}
@@ -44,7 +34,7 @@ footer ul{list-style: none;}
 .footer-links li{position: relative; float:left;}
 .footer-links ul a {font-size: 10px; font-weight: 600; margin-right:20px; text-decoration: none; text-transform: uppercase; }
 
-nav + div {margin-top: 0; background-color: #fff;}
+
 .index-banner {position: relative; text-align: center;width: 100%;}
 .banner-title {position: absolute;width:80%;top:40%; left:10%}
 .index-banner img{opacity: 0.5; }
@@ -56,3 +46,9 @@ nav + div {margin-top: 0; background-color: #fff;}
 .news-abstract h3{text-transform: uppercase; text-align: center;margin-top: 15%;}
 .news-abstract p{text-transform: capitalize;text-align: left; margin-top:5px;}
 .news-banner img{ height: 100%;display: inline-block;}
+
+.container-odd{background-color: #fff;}
+.container-even{background-color: #f2f2f2;}
+.banner-container {display: block; text-align: center; width: 100%; height: auto;}
+.banner-container .header{width: 100%; text-transform: uppercase; font-family: 'Noto Sans JP', sans-serif; color:#00CFFF; padding-top: 10%;}
+.banner-container .content{text-transform: capitalize;text-align: left; margin-top:2%; padding-bottom: 10%;padding-left:3%; padding-right: 2%;}
